@@ -66,7 +66,7 @@ export default {
       if (this.textChangedQueue.length === 1) {
         this.onTextChanged(config.APP.session1, this.textOnPage, this.textChangedQueue);
       }
-    },200),
+    },2000),
 
     debouncedMethod2: _.debounce(function() {
 
@@ -75,7 +75,7 @@ export default {
       if (this.textChangedQueue2.length === 1) {
         this.onTextChanged(config.APP.session2, this.textOnPage2, this.textChangedQueue2);
       }
-    },200),
+    },2000),
 
     onTextChanged(id, newText, textChangedQueue) {
 
